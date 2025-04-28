@@ -1,0 +1,142 @@
+\documentclass[12pt,oneside,a4paper,article]{abntex2}
+\usepackage[utf8]{inputenc} % Codificação do documento
+\usepackage[T1]{fontenc}    % Seleção de código de fonte.
+\usepackage[brazil]{babel}  % Idioma do documento
+\usepackage{graphicx}       % Inclusão de gráficos
+\usepackage{tabularx}       % Tabelas avançadas
+\usepackage{amsmath}        % Melhorias em matemática
+\usepackage{lipsum}         % Geração de texto dummy
+\usepackage{authblk}
+
+% Configurações específicas do abntex2
+% Aqui você pode adicionar configurações específicas, como redefinições de comandos
+% ou adições de novos pacotes que são essenciais para o seu documento.
+
+% Carrega o pacote abntex2cite para citações
+\usepackage[alf]{abntex2cite} % ou use [num] para citações numéricas
+
+\usepackage[left=3cm,right=2cm,top=3cm,bottom=2cm]{geometry} % Margens
+\usepackage{setspace}       % Espaçamento entre linhas
+% %\usepackage{natbib}         % Formatação de bibliografia
+
+% Informações de título
+\title{\textbf{Engenharia de Software e Comunicação}}
+\author{Cauã Marzuca \thanks{caua.marzuca@ucsal.edu.br}}
+\author{Luiz Gustavo Silva\thanks{luizgustavofranca.silva@ucsal.edu.br}}
+\author[1]{Matheus Reis \thanks{matheusreis.machado@ucsal.edu.br}}
+\author[1]{Pablo Franca\thanks{pablomelo.filho@ucsal.edu.br}}
+\author[1]{Rafael Calasans \thanks{rafael.calasans@ucsal.edu.br} }
+\author[1*]{Elton Figueiredo \thanks{elton.figueiredo@pro.ucsal.br}}
+
+\affil{
+  Engenharia de Software \par
+  Escola de Tecnologias \par
+Universidade Católica do Salvador (UCSAL) \par
+Av. Prof. Pinto de Aguiar, 2589 Pituaçu, CEP: 41740-090 \par
+Salvador/BA, Brasil
+}
+\affil[1*]{\textit {elton.figueiredo@pro.ucsal.br}}
+
+
+
+
+
+\date{11 de março de 2025}
+
+
+
+\ifthenelse{\equal{\ABNTEXisarticle}{true}}{%
+\renewcommand{\maketitlehookb}{}
+}{}
+
+% Configurações de aparência do PDF final
+% \usepackage{hyperref} % para inserir links
+ \hypersetup{
+      colorlinks=false,       % false: boxed links; true: colored links
+      pdfborder={0 0 0},      % remove as bordas ao redor dos links
+ }
+
+\renewcommand*{\Authsep}{, }
+\renewcommand*{\Authand}{, }
+\renewcommand*{\Authands}{, }
+\renewcommand*{\Affilfont}{\normalsize\normalfont}
+\renewcommand*{\Authfont}{\bfseries}    % make author names boldface    
+\setlength{\affilsep}{2em}   % set the space between author and affiliation
+
+\newsavebox\affbox
+
+
+
+
+
+\begin{document}
+
+\begin{center}
+    \includegraphics[width=0.3\textwidth]{imagens-template/ucsal_logo.png} 
+\end{center}
+{\let\newpage\relax\maketitle}
+
+\begin{resumoumacoluna}
+ 
+ \vspace{\onelineskip}
+ Esta pesquisa tem como objetivo explorar a relação entre comunicação e engenharia de software, destacando sua importância no desenvolvimento de projetos e na interação entre membros da equipe e stakeholders. A pesquisa evidencia como a comunicação eficaz contribui para a precisão, produtividade e sucesso dos projetos, minimizando ambiguidades e erros na implementação de requisitos. O estudo também aborda o impacto das metodologias ágeis, ressaltando a importância da criptografia e da conformidade com a Lei , e o uso de ferramentas tecnológicas na otimização da comunicação e colaboração. Ademais, são discutidas questões relacionadas à segurança Geral de Proteção de Dados Pessoais (LGPD). Conclui-se que a comunicação estruturada e eficiente é essencial para o sucesso na engenharia de software, exigindo aperfeiçoamento contínuo das estratégias comunicacionais no setor.
+ \noindent
+ \textbf{Palavras-chaves}: Lei, Comunicação, Tecnologia.
+\end{resumoumacoluna}
+
+\textual
+
+\section{Introdução}
+A comunicação é o processo de troca de informações, ideias, sentimentos e mensagens entre indivíduos. Já a engenharia de software segundo Pressman (2002, p. 22) é definida como: “o estabelecimento e uso de sólidos princípios de engenharia para que se possa obter economicamente um software que seja confiável e que funcione eficientemente em máquinas reais”.
+ Na engenharia de software, a comunicação se faz altamente presente nas Dayly scrums.
+Reuniões diárias entre desenvolvedores do scrum team para organizar as atividades que serão realizadas pela equipe, melhorando a comunicação entre o time e identificando impedimentos que possam reduzir a produtividade dos profissionais. 
+A engenharia de software desempenha um papel essencial na comunicação, tanto no desenvolvimento de sistemas que facilitam a interação entre pessoas quanto na comunicação entre os próprios membros da equipe de desenvolvimento.
+
+\section{Desenvolvimento}
+
+Em primeiro plano, trazendo o eixo da comunicação para a Engenharia de Software, é evidente como ela encontra-se atrelada a todo o processo de desenvolvimento de um projeto, além de  passar por instâncias internas (a comunicação entre os próprios membros da equipe) e também externa, com os clientes de um projeto, por exemplo. Dessa forma, a comunicação efetiva, como um todo, é de extrema importância para a efetividade, precisão, sucesso e harmonia de um projeto, além de ser essencial para evitar ambiguidades e falhas na implementação dos requisitos e para a correta interpretação das necessidades dos clientes e stakeholders- as partes interessadas (Lourenço, 2011).
+
+Assim, para que haja uma boa comunicação organizacional, Davis e Newstrom (1992, apud Lourenço, 2011, p.20 ) destacam que um dos pontos importantes é envolver um ciclo de feedback contínuo, onde os participantes precisam ajustar suas mensagens conforme as respostas do receptor. Para que isto aconteça, é necessário uma grande articulação entre os membros da equipe, segundo Lourenço (2011, p. 150), ficou evidente, através de estudo de caso, como o desenvolvimento de competências interpessoais pelo profissional envolvido gera repercussões positivas na efetividade da comunicação e na eficácia da transmissão da informação. Além disso, a autora também evidencia como o gerenciamento das comunicações  perpassa fatores técnicos e entrelaça fatores humanos e socioambientais, o que impacta no produto final.
+
+Outro ponto relevante ao se tratar da comunicação em um projeto atrelado a Engenharia de Software é a organização desta informação, dessa forma, o guia PMBOK( Project Management Body of Knowledge), é utilizado para auxiliar na estruturação do projeto. 
+“O Guia PMBOK é o padrão para gerenciar a maioria dos projetos, nas mais diversas áreas e setores econômicos e, de acordo com ele, projeto é “Um empreendimento de esforço temporário, planejado, executado e controlado, com objetivo de criar um produto ou serviço único.”. (PMI, 2012)
+
+A comunicação eficaz também influencia diretamente a produtividade das equipes. Segundo Heldman (2005, apud Lourenço, 2011, p.14 ), gerentes de projetos que estabelecem um canal de comunicação claro conseguem reduzir drasticamente o retrabalho e os custos. Isso porque um fluxo de informações bem estruturado evita falhas de interpretação e permite que as decisões sejam tomadas com base em dados precisos. Outro dado que reforça a importância deste fluxo de informações é que, segundo Mulcahy (2005, p. 301) cerca de 90\% do tempo em um projeto é gasto em comunicação pelo gerente de projeto, o que reforça o grande peso e responsabilidade deste profissional em um projeto.
+
+Nesse sentido, a comunicação é uma parte muito importante no gerenciamento de projetos e é reconhecida dentro do Guia Pmbok como um dos pilares para o sucesso de um projeto. Como já foi discutido, a comunicação deve acontecer entre todas as partes interessadas e entre os desenvolvedores responsáveis.
+
+Sobre o compartilhamento de informações entre os desenvolvedores, o Overleaf é um exemplo de ferramenta para ajudar na comunicação na área de engenharia de software, pois pode contribuir na escrita colaborativa de documentos técnicos , como documentação de projetos, especificações de requisitos e artigos científicos. Assim, tendo suporte ao LaTeX, a plataforma consegue facilitar a construção e, posteriormente, a publicação de documentos científicos, sendo cada vez mais utilizado como modelo (Bonilla, 2019 p. 247). Além disso, a funcionalidade de colaboração em tempo real permitindo múltiplas pessoas a editar o projeto permite uma maior eficiência para o resultado final, gerando uma comunicação mais rápida e assertiva, a qual a importância foi citada anteriormente.
+
+Após debater a importância da comunicação, do papel dos gerentes e da organização de um projeto, pode-se também relacionar com a ampliação de ferramentas que permitem a viabilização de uma comunicação mais rápida e eficaz na sociedade com um todo . Por exemplo, no setor empresarial, ferramentas revolucionaram a forma como empresas conduzem reuniões e treinamentos, ampliando as possibilidades de colaboração e networking (Andrelo; Oliveira, 2023). Além do LinkedIn, Google Meet e Zoom, area empresarial, percebe-se como as tecnologias da comunicação estão inclusas em outras áreas, pode-se relacionar como estas ferramentas demonstraram a importância da viabilização da comunicação no contexto da pandemia por COVID 19, principalmente nas escolas (Teixeira, Nascimento, 2021). 
+
+Já no mundo dos games, plataformas como Discord e Twitch conectam desenvolvedores e jogadores, permitindo interações instantâneas que influenciam diretamente no aprimoramento dos jogos, além das interações meramente com objetivo de lazer (Almeida, 2019).  Outro eixo relevante é o das redes sociais, segundo um levantamento feito pelas empresas We Are Social e Hootsuite constatou-se que cerca de 66\% da população brasileira está conectada nas redes sociais ( IZUMI; TOMAZETI, 2019).  Dessa forma, há uma constante e crescente troca de informações e dados sendo compartilhados a cada momento, seja entre desenvolvedores e clientes, professores e alunos, jogadores e criadores de jogos e entre toda a sociedade em geral. 
+
+Assim, um ponto relevante a ser citado considerando a expansão da comunicação é a segurança dos dados. Apesar das redes sociais facilitarem bastante na comunicação,  também pode facilitar o acesso de crockers, pessoas mal intencionadas, que buscam falhas de segurança para roubar dados ou informações sensíveis e confidenciais (IZUMI; TOMAZETI, 2019). Assim, para evitar ameaças que podem prejudicar de pessoas físicas, até empresas, é preciso buscar recursos para aumentar a segurança dos dados compartilhados. A criptografia de ponta-a-ponta e a aplicação de boas práticas de segurança na internet podem auxiliar na diminuição chances de invasões ( IZUMI; TOMAZETI, 2019). Somado a isto, reforçando a segurança dos dados de um indivíduo, o governo brasileiro promulgou em 2018 a Lei Geral de Proteção de Dados  Pessoais que tem como principal  objetivo   proteção,  direito  de  liberdade  e  de  privacidade  de  seus usuários. (Balbino et. al., 2022)
+
+
+
+\section{Conclusão}
+A comunicação desempenha um papel essencial na engenharia de software, influenciando diretamente a qualidade, a produtividade e o sucesso dos projetos. Através da revisão da literatura e da análise de diferentes perspectivas, constatou-se que a interação eficaz entre os membros da equipe e stakeholders é fundamental para evitar ambiguidades, reduzir retrabalho e otimizar os processos de desenvolvimento. Ademais, a implementação de metodologias ágeis, como o Scrum, reforça a importância das reuniões diárias e da retroalimentação contínua para aprimorar a comunicação interna e externa.
+
+Além disso, evidenciou-se que a utilização de ferramentas tecnológicas, como Overleaf, Google Meet, Zoom, Discord e redes sociais, tem transformado a dinâmica da comunicação em diversas áreas, incluindo a engenharia de software, o setor empresarial e o entretenimento digital. Tais plataformas promovem a troca rápida de informações e fortalecem a colaboração entre os envolvidos nos processos de desenvolvimento.
+
+Por outro lado, o avanço das tecnologias de comunicação também levanta desafios relacionados à segurança da informação. O crescimento do compartilhamento de dados online amplia a exposição a ameaças digitais, exigindo a adoção de medidas de proteção, como a criptografia de ponta-a-ponta e a conformidade com regulações, como a Lei Geral de Proteção de Dados Pessoais (LGPD).
+
+Dessa forma, conclui-se que a comunicação eficaz na engenharia de software é um fator determinante para a execução bem-sucedida de projetos, sendo essencial tanto no alinhamento de expectativas quanto na garantia da segurança e confiabilidade das informações trocadas. Assim, a busca pela melhoria contínua nos processos comunicacionais deve ser uma prioridade para profissionais e organizações que desejam se destacar em um mercado cada vez mais dinâmico e competitivo.
+
+
+
+% Formatação da bibliografia
+%bibliographystyle{plain}
+\bibliography{referencias} % Assume que você tem um arquivo referencias.bib
+\cite{Bergamini}  
+\cite{Alves}
+\cite{PMBOK}
+\cite{Rajkumar}
+\cite{Leonardo}
+\cite{Izumi}
+\cite{Michelle}
+\cite{Teixeira}
+\cite{Andrelo}
+\cite{Bernardo}
+\end{document}
